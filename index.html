@@ -5,15 +5,17 @@
 <title>HRS Fire Solution</title>
 
 <style>
-body {margin:0;font-family:Arial;line-height:1.6;}
+body {margin:0;font-family:Arial;}
 
 /* HEADER */
 header {
 background:white;
-padding:10px;
 display:flex;
+justify-content:space-between;
 align-items:center;
+padding:10px;
 }
+
 header img {width:60px;}
 
 /* HERO */
@@ -24,40 +26,54 @@ background-size:cover;
 color:white;
 padding:100px 20px;
 }
-.hero h1 {font-size:30px;}
-.hero span {background:#d4a017;padding:5px 10px;}
+
+.hero h1 {
+font-size:30px;
+line-height:1.2;
+}
+
+.hero span {
+background:#d4a017;
+padding:5px 10px;
+}
+
 .btn {
 background:#d4a017;
-padding:10px 20px;
+padding:12px 20px;
 color:white;
 text-decoration:none;
 display:inline-block;
 margin-top:15px;
 }
 
-/* SECTION */
-section {padding:30px;}
-
 /* SERVICES */
+section {padding:30px;text-align:center;}
+
 .card {
 background:#f5f5f5;
-margin:15px 0;
+margin:10px auto;
 padding:15px;
 border-radius:10px;
+max-width:300px;
 }
-.card img {width:100%;border-radius:10px;}
-
-/* WORKING PROCESS */
-.process img {width:100%;border-radius:10px;margin-top:10px;}
 
 /* FOOTER */
 .footer {
 background:#0f0f1a;
 color:white;
-padding:30px;
+padding:30px 20px;
 }
 
-/* WHATSAPP */
+.footer h3 {
+border-left:4px solid green;
+padding-left:10px;
+}
+
+.footer p, .footer li {
+font-size:14px;
+margin:5px 0;
+}
+
 .whatsapp {
 position:fixed;
 bottom:20px;
@@ -76,13 +92,14 @@ border-radius:50%;
 <!-- HEADER -->
 <header>
 <img src="logo.png">
-<h3>HRS Fire Solution</h3>
 </header>
 
 <!-- HERO -->
 <div class="hero">
-<h1><span>WELCOME</span> TO<br>HRS FIRE SOLUTION<br><b>YOUR SAFETY, OUR PRIORITY</b></h1>
+<h1><span>WELCOME</span> TO<br>HRS FIRE SOLUTION<br><b>YOUR SAFETY,<br>OUR PRIORITY</b></h1>
+
 <p>We deliver trusted fire safety solutions to safeguard lives and property.</p>
+
 <a class="btn" href="#">Learn More</a>
 </div>
 
@@ -91,89 +108,47 @@ border-radius:50%;
 <h2>Our Services</h2>
 
 <div class="card">
-<img src="extinguisher.jpg">
+<img src="extinguisher.jpg" width="100%">
 <h3>Fire Extinguisher</h3>
 <p>High quality fire extinguishers for safety.</p>
 </div>
 
 <div class="card">
-<img src="alarm.jpg">
+<img src="alarm.jpg" width="100%">
 <h3>Fire Alarm</h3>
 <p>Early fire detection system.</p>
 </div>
 
 <div class="card">
-<img src="hydrant.jpg">
+<img src="hydrant.jpg" width="100%">
 <h3>Hydrant System</h3>
 <p>Water fire safety system.</p>
 </div>
 
 <div class="card">
-<img src="sprinkler.jpg">
+<img src="sprinkler.jpg" width="100%">
 <h3>Sprinkler System</h3>
 <p>Automatic fire control.</p>
 </div>
 
 </section>
 
-<!-- WORKING PROCESS -->
-<section class="process" style="background:#f9f9f9;">
-
-<h4 style="color:#d4a017;">WORKING PROCESS</h4>
-<h2>How We Deliver Quality Fire Safety Solutions</h2>
-
-<img src="process1.jpg">
-<h3>01 Assessment & Consultation</h3>
-<p>We conduct detailed site surveys and risk analysis.</p>
-
-<img src="process2.jpg">
-<h3>02 System Design & Installation</h3>
-<p>We design and install advanced fire safety systems.</p>
-
-<img src="process3.jpg">
-<h3>03 Maintenance & Support</h3>
-<p>We provide regular maintenance and support services.</p>
-
-</section>
-
-<!-- ABOUT FULL DETAIL -->
-<section>
-
-<h2>About HRS Fire Solution</h2>
-
-<p>
-HRS Fire Solution is a trusted and rapidly growing company in the field of fire safety and protection systems. We specialize in providing complete fire safety solutions including installation, maintenance and supply of fire fighting equipment for residential, commercial and industrial projects.
-</p>
-
-<p>
-Our services include fire alarm systems, sprinkler systems, hydrant systems and fire extinguishers. We focus on delivering high quality products and ensuring maximum safety for our clients.
-</p>
-
-<p>
-With a skilled team and modern technology, we ensure that every project meets safety standards and is completed efficiently. Our goal is to protect lives and property by providing reliable and cost effective fire safety solutions.
-</p>
-
-<p>
-We believe in customer satisfaction, timely service and long-term relationships. HRS Fire Solution is committed to excellence and safety.
-</p>
-
-</section>
-
-<!-- FOOTER -->
+<!-- FOOTER (Firons style) -->
 <div class="footer">
 
 <h3>Quick Links</h3>
-<p>Home</p>
-<p>About Us</p>
-<p>Products</p>
-<p>Contact</p>
+<a href="index.html">Home</a>
+<a href="about.html">About Us</a>
+<a href="products.html">Products</a>
 
 <h3>Our Products</h3>
 <p>Fire Extinguisher</p>
-<p>Hydrant System</p>
-<p>Sprinkler System</p>
+<p>Suppression Systems</p>
+<p>Valves</p>
+<p>Hydrants</p>
+<p>Sprinklers</p>
 
-<h3>Contact</h3>
+<h3>Contact Us</h3>
 <p>📞 8765550107</p>
 <p>📧 hrsfiresolution@gmail.com</p>
 <p>📍 Varanasi, Uttar Pradesh</p>
