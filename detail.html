@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Detail</title>
+
+<script>
+function loadData(){
+let p = new URLSearchParams(window.location.search);
+let item = p.get("item");
+
+let text = "";
+
+if(item=="extinguisher"){
+text = "Fire extinguishers are used to control small fires. We provide ABC, CO2 and foam types.";
+}
+else if(item=="alarm"){
+text = "Fire alarm systems detect smoke and provide early warning to prevent accidents.";
+}
+else if(item=="hydrant"){
+text = "Hydrant system supplies water during fire emergencies through pipelines.";
+}
+else if(item=="sprinkler"){
+text = "Sprinkler system automatically controls fire when heat is detected.";
+}
+
+document.getElementById("data").innerText = text;
+}
+</script>
+
+</head>
+
+<body onload="loadData()">
+
+<h1>Product Detail</h1>
+
+<p id="data"></p>
+
+<br>
+<a href="products.html">← Back to Products</a>
+
+</body>
+</html>
