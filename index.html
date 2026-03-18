@@ -16,10 +16,7 @@ align-items:center;
 padding:10px;
 }
 
-header img {
-width:50px;
-margin-right:10px;
-}
+header img {width:50px;margin-right:10px;}
 
 /* HERO */
 .hero {
@@ -30,19 +27,10 @@ background-position:center;
 color:white;
 text-align:center;
 padding:80px 20px;
-animation:fadeIn 2s;
 }
 
-.hero h1 {
-font-size:28px;
-animation:slideUp 2s;
-}
+.hero h1 {font-size:28px;}
 
-.hero p {
-animation:fadeIn 3s;
-}
-
-/* BUTTON */
 .btn {
 background:red;
 padding:10px 20px;
@@ -68,7 +56,6 @@ background:#f5f5f5;
 border-radius:10px;
 overflow:hidden;
 box-shadow:0 0 10px rgba(0,0,0,0.3);
-animation:fadeIn 2s;
 }
 
 .card img {
@@ -78,32 +65,27 @@ object-fit:cover;
 }
 
 .card h3 {margin:10px;}
-.card p {padding:0 10px 10px;font-size:14px;}
 
-/* FORM */
-form {
-background:#eee;
-padding:20px;
-border-radius:10px;
-max-width:400px;
-margin:auto;
+.card p {
+padding:0 10px;
+font-size:14px;
 }
 
-input, select {
-width:100%;
+/* READ MORE */
+.more {
+display:none;
 padding:10px;
-margin:10px 0;
-border:none;
-border-radius:5px;
+font-size:13px;
+color:#333;
 }
 
 button {
 background:red;
 color:white;
-padding:10px;
 border:none;
+padding:8px 15px;
+margin:10px;
 border-radius:5px;
-width:100%;
 }
 
 /* FOOTER */
@@ -111,7 +93,7 @@ footer {
 background:black;
 color:white;
 text-align:center;
-padding:15px;
+padding:20px;
 }
 
 /* WHATSAPP */
@@ -125,18 +107,18 @@ padding:15px;
 border-radius:50%;
 text-decoration:none;
 }
-
-/* ANIMATION */
-@keyframes fadeIn {
-from {opacity:0;}
-to {opacity:1;}
-}
-
-@keyframes slideUp {
-from {transform:translateY(50px); opacity:0;}
-to {transform:translateY(0); opacity:1;}
-}
 </style>
+
+<script>
+function toggle(id){
+var x = document.getElementById(id);
+if(x.style.display === "none"){
+x.style.display = "block";
+}else{
+x.style.display = "none";
+}
+}
+</script>
 
 </head>
 
@@ -149,7 +131,7 @@ to {transform:translateY(0); opacity:1;}
 
 <div class="hero">
 <h1>Welcome to HRS Fire Solution</h1>
-<p>Professional Fire Safety & Protection Services</p>
+<p>Your Safety, Our Priority</p>
 <a class="btn" href="tel:8765550107">Call Now</a>
 </div>
 
@@ -158,28 +140,48 @@ to {transform:translateY(0); opacity:1;}
 
 <div class="services">
 
+<!-- Extinguisher -->
 <div class="card">
 <img src="extinguisher.jpg">
 <h3>Fire Extinguisher</h3>
-<p>High quality fire extinguishers for all fire types.</p>
+<p>Quick fire safety solution</p>
+<button onclick="toggle('e1')">Read More</button>
+<div id="e1" class="more">
+High-quality ABC, CO2 and foam fire extinguishers suitable for all fire types. Easy to use and highly effective in emergencies.
+</div>
 </div>
 
+<!-- Alarm -->
 <div class="card">
 <img src="alarm.jpg">
-<h3>Fire Alarm</h3>
-<p>Advanced fire detection systems for safety.</p>
+<h3>Fire Alarm System</h3>
+<p>Early fire detection system</p>
+<button onclick="toggle('e2')">Read More</button>
+<div id="e2" class="more">
+Advanced smoke and heat detection systems that provide instant alerts and help prevent major fire accidents.
+</div>
 </div>
 
+<!-- Hydrant -->
 <div class="card">
 <img src="hydrant.jpg">
 <h3>Hydrant System</h3>
-<p>Complete hydrant system installation.</p>
+<p>Water supply fire system</p>
+<button onclick="toggle('e3')">Read More</button>
+<div id="e3" class="more">
+Complete fire hydrant system with pipelines, pumps and valves ensuring continuous water supply during fire emergencies.
+</div>
 </div>
 
+<!-- Sprinkler -->
 <div class="card">
 <img src="sprinkler.jpg">
 <h3>Sprinkler System</h3>
-<p>Automatic fire control system.</p>
+<p>Automatic fire control</p>
+<button onclick="toggle('e4')">Read More</button>
+<div id="e4" class="more">
+Automatic sprinkler system activates during heat and controls fire instantly in buildings, offices and industries.
+</div>
 </div>
 
 </div>
@@ -187,28 +189,14 @@ to {transform:translateY(0); opacity:1;}
 </section>
 
 <section>
-<h2>Get Quote</h2>
-
-<form>
-<input type="text" placeholder="Your Name" required>
-<input type="tel" placeholder="Mobile Number" required>
-
-<select>
-<option>Select Service</option>
-<option>Fire Extinguisher</option>
-<option>Fire Alarm</option>
-<option>Hydrant System</option>
-<option>Sprinkler System</option>
-</select>
-
-<button>Submit</button>
-</form>
-
+<h2>Contact & Address</h2>
+<p>📞 8765550107</p>
+<p>📧 hrsfiresolution@gmail.com</p>
+<p>📍 Varanasi, Uttar Pradesh, India</p>
 </section>
 
 <footer>
-<p>📞 8765550107</p>
-<p>📧 hrsfiresolution@gmail.com</p>
+<p>© HRS Fire Solution | All Rights Reserved</p>
 </footer>
 
 <a class="whatsapp" href="https://wa.me/918765550107">💬</a>
