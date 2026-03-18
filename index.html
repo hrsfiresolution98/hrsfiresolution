@@ -6,17 +6,25 @@
 <style>
 body {margin:0;font-family:Arial;}
 
+/* HEADER */
 header {
 background:black;
 color:white;
-text-align:center;
-padding:15px;
+display:flex;
+align-items:center;
+padding:10px 20px;
 }
 
-.logo {
-width:120px;
+header img {
+width:70px;
+margin-right:10px;
 }
 
+header h2 {
+margin:0;
+}
+
+/* HERO */
 .hero {
 background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
 url('https://images.unsplash.com/photo-1581091215367-59ab6b9c0c2f');
@@ -36,6 +44,7 @@ text-decoration:none;
 border-radius:5px;
 }
 
+/* SECTIONS */
 section {padding:40px;text-align:center;}
 
 .services {
@@ -45,9 +54,10 @@ justify-content:center;
 gap:20px;
 }
 
+/* CARD */
 .card {
 width:280px;
-background:#f5f5f5;
+background:white;
 border-radius:10px;
 overflow:hidden;
 box-shadow:0 0 10px rgba(0,0,0,0.3);
@@ -59,11 +69,14 @@ height:180px;
 object-fit:cover;
 }
 
+.card h3 {margin:10px 0;}
+
 .card p {
-padding:10px;
+padding:0 10px 15px;
 font-size:14px;
 }
 
+/* FOOTER */
 footer {
 background:black;
 color:white;
@@ -71,7 +84,7 @@ text-align:center;
 padding:20px;
 }
 
-/* WhatsApp */
+/* WHATSAPP */
 .whatsapp {
 position:fixed;
 bottom:20px;
@@ -80,8 +93,8 @@ background:#25D366;
 color:white;
 padding:15px;
 border-radius:50%;
-font-size:20px;
 text-decoration:none;
+font-size:20px;
 }
 </style>
 
@@ -90,13 +103,13 @@ text-decoration:none;
 <body>
 
 <header>
-<img src="https://i.imgur.com/YOURLOGO.png" class="logo">
+<img src="logo.png">
 <h2>HRS FIRE SOLUTION</h2>
 </header>
 
 <div class="hero">
 <h1>Your Safety, Our Priority</h1>
-<p>Complete Fire Safety & Protection Solutions for Industrial, Commercial & Residential Projects</p>
+<p>Complete Fire Safety & Protection Solutions</p>
 <a class="btn" href="tel:8765550107">Call Now</a>
 </div>
 
@@ -106,27 +119,27 @@ text-decoration:none;
 <div class="services">
 
 <div class="card">
-<img src="https://i.imgur.com/YOUREXT.png">
+<img src="extinguisher.jpg">
 <h3>Fire Extinguisher</h3>
-<p>We provide high-quality fire extinguishers suitable for all types of fire hazards including ABC, CO2, and foam-based systems. Our extinguishers ensure quick response and safety in emergency situations.</p>
+<p>We provide high-quality fire extinguishers for all fire types including ABC, CO2 and foam systems ensuring quick emergency response.</p>
 </div>
 
 <div class="card">
-<img src="https://i.imgur.com/YOURSPRINKLER.png">
-<h3>Sprinkler System</h3>
-<p>Automatic fire sprinkler systems designed to detect heat and control fire instantly. Ideal for buildings, factories, and warehouses to prevent fire spread.</p>
-</div>
-
-<div class="card">
-<img src="https://i.imgur.com/YOURPIPE.png">
-<h3>Hydrant System</h3>
-<p>Complete fire hydrant systems installation including pipelines, pumps, and valves to ensure efficient water supply during fire emergencies.</p>
-</div>
-
-<div class="card">
-<img src="https://i.imgur.com/YOURALARM.png">
+<img src="alarm.jpg">
 <h3>Fire Alarm System</h3>
-<p>Advanced fire alarm systems with smoke and heat detection to provide early warning and protect life and property.</p>
+<p>Advanced fire alarm systems with smoke detection and early warning system to protect life and property.</p>
+</div>
+
+<div class="card">
+<img src="hydrant.jpg">
+<h3>Hydrant System</h3>
+<p>Complete hydrant system installation with pipelines, valves and pumps for efficient fire control.</p>
+</div>
+
+<div class="card">
+<img src="sprinkler.jpg">
+<h3>Sprinkler System</h3>
+<p>Automatic sprinkler systems that detect heat and control fire instantly in buildings and industries.</p>
 </div>
 
 </div>
@@ -135,7 +148,7 @@ text-decoration:none;
 
 <section>
 <h2>About Us</h2>
-<p>HRS Fire Solution is a trusted name in fire safety industry providing complete solutions including installation, maintenance and supply of fire protection systems. We focus on quality, reliability and customer satisfaction.</p>
+<p>HRS Fire Solution is a trusted company providing fire safety solutions including installation, maintenance and protection systems. We focus on quality, safety and customer satisfaction.</p>
 </section>
 
 <footer>
