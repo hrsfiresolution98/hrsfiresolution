@@ -9,195 +9,152 @@ body {margin:0;font-family:Arial;}
 
 /* HEADER */
 header {
-background:black;
-color:white;
+background:white;
 display:flex;
+justify-content:space-between;
 align-items:center;
 padding:10px;
 }
 
-header img {width:50px;margin-right:10px;}
+header img {width:60px;}
 
 /* HERO */
 .hero {
 background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
 url('bg.jpg');
 background-size:cover;
-background-position:center;
 color:white;
-text-align:center;
-padding:80px 20px;
+padding:100px 20px;
 }
 
-.hero h1 {font-size:28px;}
+.hero h1 {
+font-size:30px;
+line-height:1.2;
+}
+
+.hero span {
+background:#d4a017;
+padding:5px 10px;
+}
 
 .btn {
-background:red;
-padding:10px 20px;
+background:#d4a017;
+padding:12px 20px;
 color:white;
 text-decoration:none;
-border-radius:5px;
+display:inline-block;
+margin-top:15px;
 }
 
 /* SERVICES */
 section {padding:30px;text-align:center;}
 
-.services {
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-gap:15px;
-}
-
 .card {
-width:90%;
-max-width:300px;
 background:#f5f5f5;
+margin:10px auto;
+padding:15px;
 border-radius:10px;
-overflow:hidden;
-box-shadow:0 0 10px rgba(0,0,0,0.3);
-}
-
-.card img {
-width:100%;
-height:160px;
-object-fit:cover;
-}
-
-.card h3 {margin:10px;}
-
-.card p {
-padding:0 10px;
-font-size:14px;
-}
-
-/* READ MORE */
-.more {
-display:none;
-padding:10px;
-font-size:13px;
-color:#333;
-}
-
-button {
-background:red;
-color:white;
-border:none;
-padding:8px 15px;
-margin:10px;
-border-radius:5px;
+max-width:300px;
 }
 
 /* FOOTER */
-footer {
-background:black;
+.footer {
+background:#0f0f1a;
 color:white;
-text-align:center;
-padding:20px;
+padding:30px 20px;
 }
 
-/* WHATSAPP */
+.footer h3 {
+border-left:4px solid green;
+padding-left:10px;
+}
+
+.footer p, .footer li {
+font-size:14px;
+margin:5px 0;
+}
+
 .whatsapp {
 position:fixed;
-bottom:15px;
-right:15px;
+bottom:20px;
+right:20px;
 background:#25D366;
 color:white;
 padding:15px;
 border-radius:50%;
-text-decoration:none;
 }
 </style>
-
-<script>
-function toggle(id){
-var x = document.getElementById(id);
-if(x.style.display === "none"){
-x.style.display = "block";
-}else{
-x.style.display = "none";
-}
-}
-</script>
 
 </head>
 
 <body>
 
+<!-- HEADER -->
 <header>
 <img src="logo.png">
-<h3>HRS Fire Solution</h3>
 </header>
 
+<!-- HERO -->
 <div class="hero">
-<h1>Welcome to HRS Fire Solution</h1>
-<p>Your Safety, Our Priority</p>
-<a class="btn" href="tel:8765550107">Call Now</a>
+<h1><span>WELCOME</span> TO<br>HRS FIRE SOLUTION<br><b>YOUR SAFETY,<br>OUR PRIORITY</b></h1>
+
+<p>We deliver trusted fire safety solutions to safeguard lives and property.</p>
+
+<a class="btn" href="#">Learn More</a>
 </div>
 
+<!-- SERVICES -->
 <section>
 <h2>Our Services</h2>
 
-<div class="services">
-
-<!-- Extinguisher -->
 <div class="card">
-<img src="extinguisher.jpg">
+<img src="extinguisher.jpg" width="100%">
 <h3>Fire Extinguisher</h3>
-<p>Quick fire safety solution</p>
-<button onclick="toggle('e1')">Read More</button>
-<div id="e1" class="more">
-High-quality ABC, CO2 and foam fire extinguishers suitable for all fire types. Easy to use and highly effective in emergencies.
-</div>
+<p>High quality fire extinguishers for safety.</p>
 </div>
 
-<!-- Alarm -->
 <div class="card">
-<img src="alarm.jpg">
-<h3>Fire Alarm System</h3>
-<p>Early fire detection system</p>
-<button onclick="toggle('e2')">Read More</button>
-<div id="e2" class="more">
-Advanced smoke and heat detection systems that provide instant alerts and help prevent major fire accidents.
-</div>
+<img src="alarm.jpg" width="100%">
+<h3>Fire Alarm</h3>
+<p>Early fire detection system.</p>
 </div>
 
-<!-- Hydrant -->
 <div class="card">
-<img src="hydrant.jpg">
+<img src="hydrant.jpg" width="100%">
 <h3>Hydrant System</h3>
-<p>Water supply fire system</p>
-<button onclick="toggle('e3')">Read More</button>
-<div id="e3" class="more">
-Complete fire hydrant system with pipelines, pumps and valves ensuring continuous water supply during fire emergencies.
-</div>
+<p>Water fire safety system.</p>
 </div>
 
-<!-- Sprinkler -->
 <div class="card">
-<img src="sprinkler.jpg">
+<img src="sprinkler.jpg" width="100%">
 <h3>Sprinkler System</h3>
-<p>Automatic fire control</p>
-<button onclick="toggle('e4')">Read More</button>
-<div id="e4" class="more">
-Automatic sprinkler system activates during heat and controls fire instantly in buildings, offices and industries.
-</div>
-</div>
-
+<p>Automatic fire control.</p>
 </div>
 
 </section>
 
-<section>
-<h2>Contact & Address</h2>
+<!-- FOOTER (Firons style) -->
+<div class="footer">
+
+<h3>Quick Links</h3>
+<p>Home</p>
+<p>About Us</p>
+<p>Products</p>
+<p>Contact</p>
+
+<h3>Our Products</h3>
+<p>Fire Extinguisher</p>
+<p>Suppression Systems</p>
+<p>Valves</p>
+<p>Hydrants</p>
+<p>Sprinklers</p>
+
+<h3>Contact Us</h3>
 <p>📞 8765550107</p>
 <p>📧 hrsfiresolution@gmail.com</p>
-<p>📍 Varanasi, Uttar Pradesh, India</p>
-</section>
+<p>📍 Varanasi, Uttar Pradesh</p>
 
-<footer>
-<p>© HRS Fire Solution | All Rights Reserved</p>
-</footer>
+</div>
 
 <a class="whatsapp" href="https://wa.me/918765550107">💬</a>
 
