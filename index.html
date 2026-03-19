@@ -9,14 +9,14 @@ body {margin:0;font-family:Arial;}
 
 /* HEADER */
 header {
-background:white;
 display:flex;
 justify-content:space-between;
 align-items:center;
 padding:10px;
+background:white;
 }
-
 header img {width:60px;}
+.menu {font-size:25px;color:green;}
 
 /* HERO */
 .hero {
@@ -25,11 +25,6 @@ url('bg.jpg');
 background-size:cover;
 color:white;
 padding:100px 20px;
-}
-
-.hero h1 {
-font-size:30px;
-line-height:1.2;
 }
 
 .hero span {
@@ -46,34 +41,31 @@ display:inline-block;
 margin-top:15px;
 }
 
-/* SERVICES */
+/* SECTION */
 section {padding:30px;text-align:center;}
 
+/* SERVICES */
 .card {
 background:#f5f5f5;
-margin:10px auto;
+margin:10px;
 padding:15px;
 border-radius:10px;
-max-width:300px;
 }
+
+/* PROCESS */
+.process img {width:100%;border-radius:10px;}
+
+/* FAQ */
+.faq {background:#f5f5f5;padding:20px;margin:10px;border-radius:10px;}
 
 /* FOOTER */
 .footer {
 background:#0f0f1a;
 color:white;
-padding:30px 20px;
+padding:30px;
 }
 
-.footer h3 {
-border-left:4px solid green;
-padding-left:10px;
-}
-
-.footer p, .footer li {
-font-size:14px;
-margin:5px 0;
-}
-
+/* WHATSAPP */
 .whatsapp {
 position:fixed;
 bottom:20px;
@@ -92,6 +84,7 @@ border-radius:50%;
 <!-- HEADER -->
 <header>
 <img src="logo.png">
+<div class="menu">≡</div>
 </header>
 
 <!-- HERO -->
@@ -110,48 +103,101 @@ border-radius:50%;
 <div class="card">
 <img src="extinguisher.jpg" width="100%">
 <h3>Fire Extinguisher</h3>
-<p>High quality fire extinguishers for safety.</p>
 </div>
 
 <div class="card">
 <img src="alarm.jpg" width="100%">
-<h3>Fire Alarm</h3>
-<p>Early fire detection system.</p>
+<h3>Fire Alarm System</h3>
 </div>
 
 <div class="card">
 <img src="hydrant.jpg" width="100%">
 <h3>Hydrant System</h3>
-<p>Water fire safety system.</p>
 </div>
 
 <div class="card">
 <img src="sprinkler.jpg" width="100%">
 <h3>Sprinkler System</h3>
-<p>Automatic fire control.</p>
 </div>
 
 </section>
 
-<!-- FOOTER (Firons style) -->
+<!-- ABOUT -->
+<section>
+<h2>About Us</h2>
+
+<p>
+HRS Fire Solution is a trusted fire safety company providing complete fire protection systems including installation, maintenance and supply of fire equipment.
+</p>
+
+<p>
+We focus on safety, quality and customer satisfaction with modern technology and expert team.
+</p>
+
+</section>
+
+<!-- PRODUCTS -->
+<section>
+<h2>Our Products</h2>
+
+<div class="card">Fire Extinguisher - Read More</div>
+<div class="card">Suppression System - Read More</div>
+<div class="card">Valves - Read More</div>
+<div class="card">Hydrant - Read More</div>
+<div class="card">Sprinkler - Read More</div>
+
+</section>
+
+<!-- WORKING PROCESS -->
+<section class="process">
+<h4 style="color:#d4a017;">WORKING PROCESS</h4>
+<h2>How We Deliver Quality Fire Safety Solutions</h2>
+
+<img src="process1.jpg">
+<h3>01 Assessment & Consultation</h3>
+
+<img src="process2.jpg">
+<h3>02 System Design & Installation</h3>
+
+<img src="process3.jpg">
+<h3>03 Maintenance & Support</h3>
+
+</section>
+
+<!-- FAQ -->
+<section>
+<h2>General Queries About Fire Safety</h2>
+
+<div class="faq">
+<h4>What types of fire systems do you offer?</h4>
+<p>We provide alarm, hydrant, sprinkler and extinguisher systems.</p>
+</div>
+
+<div class="faq">
+<h4>Do you provide maintenance?</h4>
+<p>Yes, we provide full maintenance and AMC services.</p>
+</div>
+
+</section>
+
+<!-- FOOTER -->
 <div class="footer">
 
 <h3>Quick Links</h3>
-<a href="index.html">Home</a>
-<a href="about.html">About Us</a>
-<a href="products.html">Products</a>
+<p>Home</p>
+<p>About</p>
+<p>Products</p>
+<p>Contact</p>
 
 <h3>Our Products</h3>
 <p>Fire Extinguisher</p>
-<p>Suppression Systems</p>
-<p>Valves</p>
-<p>Hydrants</p>
-<p>Sprinklers</p>
+<p>Hydrant</p>
+<p>Sprinkler</p>
 
-<h3>Contact Us</h3>
+<h3>Contact</h3>
 <p>📞 8765550107</p>
 <p>📧 hrsfiresolution@gmail.com</p>
-<p>📍 Varanasi, Uttar Pradesh</p>
+<p>📍 Varanasi, UP</p>
 
 </div>
 
