@@ -7,92 +7,156 @@
 <style>
 body {margin:0;font-family:Arial;}
 
-/* NAVBAR */
-nav {
+/* HEADER */
+header {
+background:white;
 display:flex;
 justify-content:space-between;
 align-items:center;
-background:black;
-color:white;
 padding:10px;
 }
 
-nav a {
-color:white;
-margin:0 10px;
-text-decoration:none;
-font-size:14px;
-}
+header img {width:60px;}
 
 /* HERO */
 .hero {
-background:#111;
+background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+url('bg.jpg');
+background-size:cover;
 color:white;
-padding:60px 20px;
-text-align:center;
+padding:100px 20px;
 }
 
-.hero h1 {font-size:24px;}
+.hero h1 {
+font-size:30px;
+line-height:1.2;
+}
 
-/* CARDS */
+.hero span {
+background:#d4a017;
+padding:5px 10px;
+}
+
+.btn {
+background:#d4a017;
+padding:12px 20px;
+color:white;
+text-decoration:none;
+display:inline-block;
+margin-top:15px;
+}
+
+/* SERVICES */
+section {padding:30px;text-align:center;}
+
 .card {
 background:#f5f5f5;
-margin:15px;
+margin:10px auto;
 padding:15px;
 border-radius:10px;
+max-width:300px;
 }
 
-button {
-background:red;
+/* FOOTER */
+.footer {
+background:#0f0f1a;
 color:white;
-border:none;
-padding:8px 15px;
-border-radius:5px;
+padding:30px 20px;
 }
 
-/* HIDDEN TEXT */
-.more {display:none;}
+.footer h3 {
+border-left:4px solid green;
+padding-left:10px;
+}
+
+.footer p, .footer li {
+font-size:14px;
+margin:5px 0;
+}
+
+.whatsapp {
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px;
+border-radius:50%;
+}
 </style>
-
-<script>
-function toggle(id){
-let x = document.getElementById(id);
-x.style.display = (x.style.display==="block")?"none":"block";
-}
-</script>
 
 </head>
 
 <body>
 
-<!-- NAV -->
-<nav>
-<div>HRS Fire</div>
-<div>
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="products.html">Products</a>
-</div>
-</nav>
+<!-- HEADER -->
+<header>
+<img src="logo.png">
+</header>
 
 <!-- HERO -->
 <div class="hero">
-<h1>Welcome to HRS Fire Solution</h1>
-<p>Your Safety, Our Priority</p>
+<h1><span>WELCOME</span> TO<br>HRS FIRE SOLUTION<br><b>YOUR SAFETY,<br>OUR PRIORITY</b></h1>
+
+<p>We deliver trusted fire safety solutions to safeguard lives and property.</p>
+
+<a class="btn" href="#">Learn More</a>
 </div>
 
-<!-- PRODUCTS -->
+<!-- SERVICES -->
+<section>
+<h2>Our Services</h2>
+
 <div class="card">
+<img src="extinguisher.jpg" width="100%">
 <h3>Fire Extinguisher</h3>
-<p>Used to control fire</p>
-
-<button onclick="toggle('p1')">Read More</button>
-
-<div id="p1" class="more">
-Fire extinguishers are essential fire safety tools used to control or extinguish small fires in emergency situations. These devices come in various types such as CO2, Dry Powder, and Foam extinguishers, each designed for specific fire classes. They are easy to use and highly effective in preventing fire from spreading. Fire extinguishers are widely used in homes, offices, factories, and commercial buildings to ensure safety and quick response during fire incidents.
+<p>High quality fire extinguishers for safety.</p>
 </div>
 
+<div class="card">
+<img src="alarm.jpg" width="100%">
+<h3>Fire Alarm</h3>
+<p>Early fire detection system.</p>
 </div>
+
+<div class="card">
+<img src="hydrant.jpg" width="100%">
+<h3>Hydrant System</h3>
+<p>Water fire safety system.</p>
+</div>
+
+<div class="card">
+<img src="sprinkler.jpg" width="100%">
+<h3>Sprinkler System</h3>
+<p>Automatic fire control.</p>
+</div>
+
+</section>
+
+<!-- FOOTER (Firons style) -->
+<div class="footer">
+
+<h3>Quick Links</h3>
+<p>Home</p>
+<p>About Us</p>
+<p>Products</p>
+<p>Contact</p>
+
+<h3>Our Products</h3>
+<p>Fire Extinguisher</p>
+<p>Suppression Systems</p>
+<p>Valves</p>
+<p>Hydrants</p>
+<p>Sprinklers</p>
+
+<h3>Contact Us</h3>
+<p>📞 8765550107</p>
+<p>📧 hrsfiresolution@gmail.com</p>
+<p>📍 Varanasi, Uttar Pradesh</p>
+
+</div>
+
+<a class="whatsapp" href="https://wa.me/918765550107">💬</a>
 
 </body>
 </html>
