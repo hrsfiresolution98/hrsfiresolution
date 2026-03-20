@@ -24,44 +24,47 @@ background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
 url('bg.jpg');
 background-size:cover;
 color:white;
-padding:100px 20px;
+padding:80px 20px;
 }
 
-.hero h1 {
-font-size:30px;
-line-height:1.2;
-}
-
-.hero span {
-background:#d4a017;
-padding:5px 10px;
-}
+.hero h1 {font-size:26px;line-height:1.3;}
+.hero span {background:#d4a017;padding:5px 10px;}
 
 .btn {
 background:#d4a017;
-padding:12px 20px;
+padding:10px 15px;
 color:white;
 text-decoration:none;
 display:inline-block;
-margin-top:15px;
+margin-top:10px;
 }
 
-/* SERVICES */
-section {padding:30px;text-align:center;}
+/* SECTION */
+section {padding:25px;text-align:center;}
 
+/* CARD */
 .card {
 background:#f5f5f5;
-margin:10px auto;
+margin:12px auto;
 padding:15px;
 border-radius:10px;
-max-width:300px;
+max-width:320px;
+box-shadow:0 0 8px rgba(0,0,0,0.2);
+}
+
+.card img {
+width:100%;
+height:150px;
+object-fit:cover;
+border-radius:8px;
 }
 
 /* FOOTER */
 .footer {
 background:#0f0f1a;
 color:white;
-padding:30px 20px;
+padding:20px;
+font-size:14px;
 }
 
 .footer h3 {
@@ -69,18 +72,14 @@ border-left:4px solid green;
 padding-left:10px;
 }
 
-.footer p, .footer li {
-font-size:14px;
-margin:5px 0;
-}
-
+/* WHATSAPP */
 .whatsapp {
 position:fixed;
-bottom:20px;
-right:20px;
+bottom:15px;
+right:15px;
 background:#25D366;
 color:white;
-padding:15px;
+padding:12px;
 border-radius:50%;
 }
 </style>
@@ -89,17 +88,13 @@ border-radius:50%;
 
 <body>
 
-<!-- HEADER -->
 <header>
 <img src="logo.png">
 </header>
 
-<!-- HERO -->
 <div class="hero">
 <h1><span>WELCOME</span> TO<br>HRS FIRE SOLUTION<br><b>YOUR SAFETY,<br>OUR PRIORITY</b></h1>
-
 <p>We deliver trusted fire safety solutions to safeguard lives and property.</p>
-
 <a class="btn" href="#">Learn More</a>
 </div>
 
@@ -108,48 +103,102 @@ border-radius:50%;
 <h2>Our Services</h2>
 
 <div class="card">
-<img src="extinguisher.jpg" width="100%">
+<img src="extinguisher.jpg">
 <h3>Fire Extinguisher</h3>
 <p>High quality fire extinguishers for safety.</p>
 </div>
 
 <div class="card">
-<img src="alarm.jpg" width="100%">
+<img src="alarm.jpg">
 <h3>Fire Alarm</h3>
 <p>Early fire detection system.</p>
 </div>
 
 <div class="card">
-<img src="hydrant.jpg" width="100%">
+<img src="hydrant.jpg">
 <h3>Hydrant System</h3>
 <p>Water fire safety system.</p>
 </div>
 
 <div class="card">
-<img src="sprinkler.jpg" width="100%">
+<img src="sprinkler.jpg">
 <h3>Sprinkler System</h3>
 <p>Automatic fire control.</p>
 </div>
 
 </section>
 
-<!-- FOOTER (Firons style) -->
+<!-- MAINTENANCE -->
+<section style="background:#f9f9f9;">
+
+<h2>Maintenance & Support</h2>
+
+<div class="card">
+<img src="maintenance.jpg">
+<p>
+At HRS Fire Solution, we believe that installation of fire safety systems is only the beginning. Regular maintenance and proper support are equally important to ensure long-term safety. Our maintenance services are designed to keep all fire systems in perfect working condition at all times.
+
+We provide complete AMC (Annual Maintenance Contract) services that include inspection, testing, repair, and replacement of faulty components. Our trained professionals carefully check fire alarms, hydrant systems, sprinklers, and extinguishers to ensure they respond instantly during emergencies.
+
+Regular servicing helps prevent system failure and increases the lifespan of equipment. Our support team is always ready to provide quick assistance in case of any issue. With our reliable maintenance services, clients can stay stress-free knowing their fire safety systems are always active and ready.
+</p>
+</div>
+
+</section>
+
+<!-- INSTALLATION -->
+<section>
+
+<h2>Installation & Delivery</h2>
+
+<div class="card">
+<img src="installation.jpg">
+<p>
+We ensure fast delivery and professional installation of all fire safety equipment. Our experienced team installs systems according to industry standards and ensures complete safety. Every system is tested after installation to guarantee proper working and reliability.
+</p>
+</div>
+
+</section>
+
+<!-- PROCESS -->
+<section style="background:#f9f9f9;">
+
+<h2>Working Process</h2>
+
+<div class="card">
+<img src="process1.jpg">
+<h3>01 Assessment</h3>
+<p>We analyze site requirements and identify risks.</p>
+</div>
+
+<div class="card">
+<img src="process2.jpg">
+<h3>02 Installation</h3>
+<p>We install advanced fire safety systems professionally.</p>
+</div>
+
+<div class="card">
+<img src="process3.jpg">
+<h3>03 Support</h3>
+<p>We provide regular maintenance and quick support.</p>
+</div>
+
+</section>
+
+<!-- FOOTER -->
 <div class="footer">
 
 <h3>Quick Links</h3>
-<p>Home</p>
-<p>About Us</p>
-<p>Products</p>
-<p>Contact</p>
+<a href="index.html">Home</a>
+<a href="about.html">About Us</a>
+<a href="products.html">Products</a>
 
 <h3>Our Products</h3>
 <p>Fire Extinguisher</p>
-<p>Suppression Systems</p>
-<p>Valves</p>
-<p>Hydrants</p>
-<p>Sprinklers</p>
+<p>Hydrant System</p>
+<p>Sprinkler System</p>
 
-<h3>Contact Us</h3>
+<h3>Contact</h3>
 <p>📞 8765550107</p>
 <p>📧 hrsfiresolution@gmail.com</p>
 <p>📍 Varanasi, Uttar Pradesh</p>
